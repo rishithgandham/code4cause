@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import Link from 'next/link';
 import {
   ArrowRight,
   Building2,

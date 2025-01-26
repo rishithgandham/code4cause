@@ -1,9 +1,8 @@
 import React from 'react'
 
 import { Button } from '@/components/ui/button'
-import { redirect } from 'next/navigation';
 import Link from 'next/link';
-import { Building2, Code, Database, Globe, Handshake, Server, User } from 'lucide-react';
+import {  User } from 'lucide-react';
 
 import saket from '@/app/images/saket.png'
 import anish from '@/app/images/anish.png'
@@ -149,7 +148,7 @@ const teamMembers: TeamMember[] = [
 
 ]
 
-export function OurTeam() {
+ function OurTeam() {
     return (
         <section className="py-12 bg-gray-50">
             <div className="container mx-auto px-4">
