@@ -11,7 +11,9 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <Image src={c4clogo} alt="Code 4 Cause" width={90} height={40} />
+              <Link href="/">
+                <Image src={c4clogo} alt="Code 4 Cause" width={90} height={40} />
+              </Link>
             </div>
             <div className="flex items-center gap-4">
               <Button asChild variant="ghost" className="text-sm font-medium">

@@ -9,7 +9,7 @@ import anish from '@/app/images/anish.png'
 import eshwar from '@/app/images/eshwar.png'
 import jitesh from '@/app/images/jitesh.png'
 import karan from '@/app/images/karan.jpeg'
-// import rishith from '@/app/images/rishith.png'
+import rishith from '@/app/images/rishith.jpg'
 import sriram from '@/app/images/sriram.png'
 export default function Page() {
 
@@ -31,9 +31,9 @@ export default function Page() {
 
 function MissionStatement() {
     return (
-        <main className="flex h-[100vh] magicpattern justify-center items-center">
-            <section className=" bg-blue-200 rounded-xl  px-8 py-8  gap-10 max-w-7xl   overflow-visible">
-                <div className="font-bold tracking-tighter sm:text-6xl text-5xl w-3/4 bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent mb-10 pb-2">
+        <main className="flex min-h-screen   mx-5 magicpattern justify-center items-center">
+            <section className=" bg-blue-200 mt-20 sm:mt-0  rounded-xl  px-4 py-8  gap-10 max-w-7xl   overflow-visible">
+                <div className="font-bold tracking-tighter sm:text-6xl text-5xl md:w-3/4 w-full bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent mb-10 pb-2">
                     <span>Bridging Communities Through Technology and Purpose.</span>
                 </div>
 
@@ -107,6 +107,7 @@ const teamMembers: TeamMember[] = [
     {
         name: "Rishith Gandham",
         role: "Co-Founder, Lead Developer",
+        image: rishith,
         bio: "Hello, I am Rishith Gandham, and I am a junior at Deep Run High School. I am passionate about computer science and I love to code. I am excited to use my skills to help the community and make a difference. In my free time, I enjoy playing basketball and the piano.",
         linkedin: "https://linkedin.com/in/",
         twitter: "https://twitter.com/",
@@ -169,7 +170,7 @@ const teamMembers: TeamMember[] = [
                                         alt={member.name}
                                         width={400}
                                         height={400}
-                                        className="w-full h-48 object-cover"
+                                        className=" h-96 object-cover"
                                     />
                                 ) :
                                     (

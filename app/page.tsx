@@ -70,7 +70,7 @@ export default function Page() {
   return (
     <div className="flex flex-col min-h-screen">
       <Hero />
-      <MissionStatement/>
+      <MissionStatement />
       <WhyAWebsite />
       <WhyFromUs />
       <BookAMeeting />
@@ -83,7 +83,7 @@ function WhyAWebsite() {
   return (
     <main className="flex-grow flex bg-gradient-to-br from-blue-200  to-blue-100 items-center justify-center hero py-20 ">
       <section className="relative  rounded-xl  px-8 py-8  gap-10 max-w-7xl   overflow-visible">
-        <div className="font-bold  w-full  text-start mb-10 pb-2 px-10">
+        <div className="font-bold  w-full  text-start mb-10 pb-2 px-5">
           <p className="sm:text-6xl text-5xl tracking-tighter mb-2 ">
             Why a website? And why from us?
           </p>
@@ -116,7 +116,7 @@ function WhyFromUs() {
   return (
     <main className="flex-grow flex  items-center magicpattern justify-center hero py-10 ">
       <section className="relative  rounded-xl  px-8 py-8  gap-10 max-w-7xl   overflow-visible">
-        <div className="font-bold  w-full  text-end mb-10 pb-2 px-10">
+        <div className="font-bold  w-full  text-end mb-10 pb-2 px-5">
           <p className="sm:text-6xl text-5xl tracking-tighter mb-2 ">
             And why from us?
           </p>
@@ -141,25 +141,27 @@ function WhyFromUs() {
 
 function Hero() {
   return (
-    <main className="flex-grow flex  items-center justify-center h-screen hero bg-gradient-to-b from-blue-100 from-20% to-white">
-      <section className="relative  py-40 px-8  gap-10 max-w-7xl  grid lg:grid-cols-2 grid-cols-1  overflow-visible">
+    <main className="flex-grow flex   items-center justify-center h-screen hero bg-gradient-to-b from-blue-100 from-20% to-white">
+      <section className="relative  md:mt-0 mt-20 py-40 px-8  gap-10 max-w-7xl  grid lg:grid-cols-2 grid-cols-1  overflow-visible">
+
+
         <Handshake
           size={50}
-          className="absolute top-10 left-[50%] text-blue-400  transform rotate-12"
+          className="absolute md:block hidden top-10 left-[50%] text-blue-400  transform rotate-12"
         />
         <Code
           size={30}
-          className="absolute top-20 right-10  text-blue-400  transform -rotate-12"
+          className="absolute top-20 right-10 md:block hidden  text-blue-400  transform -rotate-12"
         />
-        <Database className="absolute top-20  left-10 text-blue-400 transform rotate-12" />
-        <Globe className="absolute md:bottom-14 bottom-20 right-10 text-blue-400  transform rotate-12" />
+        <Database className="absolute top-20  left-10 md:block hidden text-blue-400 transform rotate-12" />
+        <Globe className="absolute md:bottom-14 bottom-20 right-10 md:block hidden text-blue-400  transform rotate-12" />
         <Server
           size={30}
-          className="absolute md:bottom-14 bottom-20 left-10 text-blue-400  transform -rotate-12"
+          className="absolute md:bottom-14 bottom-20 left-10 text-blue-400 md:block hidden transform -rotate-12"
         />
         <Building2
           size={50}
-          className="absolute md:bottom-10 bottom-14 right-[50%] text-blue-400  transform -rotate-12"
+          className="absolute md:bottom-10 bottom-14 right-[50%] text-blue-400 md:block hidden transform -rotate-12"
         />
         <MainLanding />
         <div className="col-span-1 flex h-full ">
@@ -211,9 +213,9 @@ function Hero() {
 
 function MissionStatement() {
   return (
-    <main className="flex-grow flex items-center justify-center hero py-20 bg-gradient-to-b">
-      <section className="relative bg-blue-200 rounded-xl  px-8 py-8  gap-10 max-w-7xl   overflow-visible">
-        <div className="font-bold tracking-tighter sm:text-6xl text-5xl w-3/4 bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent mb-10 pb-2">
+    <main className="flex-grow flex items-center justify-center px-5 hero py-20 bg-gradient-to-b">
+      <section className="relative bg-blue-200 rounded-xl  px-4 py-8  gap-10 max-w-7xl   overflow-visible">
+        <div className="font-bold tracking-tighter sm:text-6xl text-5xl w-full sm:w-3/4 bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent mb-10 pb-2">
           <span>Bridging Communities Through Technology and Purpose.</span>
         </div>
 
