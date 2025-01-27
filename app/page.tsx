@@ -141,8 +141,8 @@ function WhyFromUs() {
 
 function Hero() {
   return (
-    <main className="flex-grow flex   items-center justify-center h-screen hero bg-gradient-to-b from-blue-100 from-20% to-white">
-      <section className="relative  md:mt-0 mt-20 py-40 px-8  gap-10 max-w-7xl  grid lg:grid-cols-2 grid-cols-1  overflow-visible">
+    <main className="flex-grow flex   items-center justify-center min-h-screen hero bg-gradient-to-b from-blue-100 from-20% to-white">
+      <section className="relative py-40 px-8  gap-10 max-w-7xl  grid lg:grid-cols-2 grid-cols-1  overflow-visible">
 
 
         <Handshake
@@ -172,7 +172,7 @@ function Hero() {
             speed={40}
             autoFill
           >
-            <Card className="mx-3">
+            <Card className="mx-3 rounded-none">
               <div className="w-[500px] h-[300px] bg-secondary border-b-2 flex justify-center items-center ">
                 <p className="italic">Placeholder</p>
                 {/* <Image
@@ -340,7 +340,7 @@ function FeatureCards() {
 
 function MainLanding() {
   return (
-    <div className="col-span-1 border-0 md:border-r-2 border-gray-200 ">
+    <div className="col-span-1 border-0 md:border-r-2  ">
       <div className=" py-8">
         <div className="font-bold tracking-tighter sm:text-6xl text-5xl bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent pb-2">
           <span>Bridging the digital divide, one line of code at a time </span>

@@ -6,14 +6,12 @@ import {  User } from 'lucide-react';
 
 import saket from '@/app/images/saket.png'
 import anish from '@/app/images/anish.png'
-import eshwar from '@/app/images/eshwar.png'
+import eshwar from '@/app/images/eshwar.jpg'
 import jitesh from '@/app/images/jitesh.png'
 import karan from '@/app/images/karan.jpeg'
 import rishith from '@/app/images/rishith.jpg'
 import sriram from '@/app/images/sriram.png'
 export default function Page() {
-
-
     return (
         <>
             <div className="flex-col flex min-h-screen">
