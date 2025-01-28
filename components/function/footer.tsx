@@ -16,12 +16,12 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-gray-900">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="hover:text-primary transition-colors">
+                <Link href="/aboutus" className="hover:text-primary transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="hover:text-primary transition-colors">
+                <Link href="/showcase" className="hover:text-primary transition-colors">
                   Our Projects
                 </Link>
               </li>
@@ -39,9 +39,8 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-900">Contact Us</h3>
-            <p>Email: code4cause@gmail.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Address: 123 Tech Street, Codeville, CV 12345</p>
+            <p>Email: code4causenonprofit@gmail.com</p>
+            <p>Phone: (804) 366 2515</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-900">Follow Us</h3>
@@ -65,7 +64,7 @@ export function Footer() {
                 <span className="sr-only">Twitter</span>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/code4cause_org/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-primary transition-colors"
