@@ -11,6 +11,13 @@ import jitesh from '@/app/images/jitesh.png'
 import karan from '@/app/images/karan.jpeg'
 import rishith from '@/app/images/rishith.jpg'
 import sriram from '@/app/images/sriram.png'
+
+
+export const metadata: Metadata = {
+    title: 'Code 4 Cause - About Us',
+    description: 'Based in Richmond, Virginia, our initiative is to empower local businesses and organizations by creating a platform for them to advertise their business.',
+    
+}
 export default function Page() {
     return (
         <>
@@ -73,6 +80,7 @@ function MissionStatement() {
 import Image, { StaticImageData } from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Github, Linkedin, Twitter } from "lucide-react"
+import { Metadata } from 'next';
 
 interface TeamMember {
     name: string
