@@ -11,6 +11,7 @@ const poppins = Poppins({ weight: ["100", '200', '300', '400', '500', '600', '70
 
 
 export const metadata: Metadata = {
+  title: 'Code 4 Cause',
   description: 'Code 4 Cause is a dedicated non-profit organization creating impactful websites for smaller organizations, bridging the digital divide one line of code at a time.',
   twitter: {
     card: 'summary_large_image',
