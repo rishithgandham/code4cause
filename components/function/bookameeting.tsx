@@ -8,17 +8,28 @@ import { CalendarIcon } from "lucide-react"
 import { format } from "date-fns"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 
+import { useForm, ValidationError } from '@formspree/react';
+
 export default function BookAMeeting() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [date, setDate] = useState<Date>()
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    console.log("Form submitted", { name, email, date })
-    // Here you would typically send the form data to your backend or a scheduling service
-  }
+  const [state, formSpreeHandleSubmit] = useForm("mpwqpnjo");
 
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    formSpreeHandleSubmit({
+      name,
+      email,
+      date: date?.toISOString()
+    });
+    setName("");
+    setEmail("");
+    setDate(undefined);
+    alert("Thank you for booking a meeting! We will get back to you shortly.")
+  }
+  
   return (
     <section id="bam" className="w-full  flex justify-center py-20 md:py-24 lg:py-32 bg-gray-100">
       <div className="container px-4 md:px-6 ">
@@ -107,7 +118,7 @@ export default function BookAMeeting() {
                 </PopoverContent>
               </Popover>
             </div>
-            <Button type="submit" className=" my-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 w-full">
+            <Button disabled={state.submitting} type="submit" className=" my-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 w-full">
               Book Meeting
             </Button>
           </form>
