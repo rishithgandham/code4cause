@@ -25,6 +25,14 @@ import {
 } from 'lucide-react';
 import Marquee from 'react-fast-marquee';
 import BookAMeeting from '@/components/function/bookameeting';
+import { title } from 'process';
+
+import tennisforall from './images/tennisforallinc.png'
+import tasx from './images/tasx.png'
+import evergreen from './images/evergreen.png'
+import rvaworks from './images/rvaworks.png'
+import Image from 'next/image';
+import Link from 'next/link';
 
 const iconSize = 20;
 
@@ -136,6 +144,26 @@ function WhyFromUs() {
 
 
 
+const examples = [
+  {
+    title: 'Tennis For All',
+    image: tennisforall
+  },
+  {
+    title: 'Tasx',
+    image: tasx
+
+  },
+  {
+    title: 'Evergreen',
+    image: evergreen
+  },
+  {
+    title: 'RVA Works',
+    image: rvaworks
+  }
+]
+
 
 
 
@@ -172,38 +200,30 @@ function Hero() {
             speed={40}
             autoFill
           >
-            <Card className="mx-3 rounded-none">
-              <div className="w-[500px] h-[300px] bg-secondary border-b-2 flex justify-center items-center ">
-                <p className="italic">Placeholder</p>
-                {/* <Image
-                src={'https://picsum.photos/200/300'}
-                alt="Code 4 Cause Team"
-                width={300}
-                height={200}
-                
-              /> */}
-              </div>
+            {examples.map((example, index) => (
+              <Card key={index} className="mx-3 rounded-none">
+                <div className="w-[500px] h-[290] bg-secondary border-b-2 flex justify-center items-center ">
+                  <Image
+                    src={example.image}
+                    alt="Code 4 Cause Team"
+                    width={300}
+                    height={200}
+                    className='w-full '
+                  />
+                </div>
 
-              <CardFooter className="py-2 px-2 flex justify-between">
-                <p className="text-sm font-semibold italic tracking-tight">
-                  App Name 1
-                </p>
-                <p className="text-sm font-semibold italic tracking-tight">
-                  Organization
-                </p>
-              </CardFooter>
-            </Card>
-            {/* <Card className='h-full'>
-                <Image
-                  src={c4cteam}
-                  alt="Code 4 Cause Team"
-                  
-                  className='w-40 h-40 rounded-full'
-                />
-              <CardFooter>
-                <p className="text-xl font-bold">App Name 1</p>
-              </CardFooter>
-            </Card> */}
+                <CardFooter className="py-2 px-2 flex justify-between">
+                  <p className="text-sm font-semibold italic tracking-tight">
+                    {example.title}
+                  </p>
+                  <p className="text-sm font-semibold italic tracking-tight">
+                    Organization
+                  </p>
+                </CardFooter>
+              </Card>
+            ))}
+
+
           </Marquee>
         </div>
       </section>
@@ -213,7 +233,7 @@ function Hero() {
 
 function MissionStatement() {
   return (
-    <main className="flex-grow flex items-center justify-center px-5 hero py-20 bg-gradient-to-b">
+    <main id='ms' className="flex-grow flex items-center justify-center px-5 hero py-20 bg-gradient-to-b">
       <section className="relative bg-blue-200 rounded-xl  px-4 py-8  gap-10 max-w-7xl   overflow-visible">
         <div className="font-bold tracking-tighter sm:text-6xl text-5xl w-full sm:w-3/4 bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent mb-10 pb-2">
           <span>Bridging Communities Through Technology and Purpose.</span>
@@ -237,14 +257,23 @@ function MissionStatement() {
         </p>
 
         <div className="flex justify-start gap-2 ">
+
           <Button
+            asChild
             size={'lg'}
             className="bg-blue-600 hover:bg-blue-700 shadow-lg"
           >
-            Contact Us
+            <Link href={'/#bam'}>
+              Contact Us
+            </Link>
           </Button>
-          <Button variant={'link'} size={'lg'}>
-            Meet the team
+          <Button asChild variant={'link'} size={'lg'}>
+            <Link
+              href={'/aboutus#mtt'}
+            >
+
+              Meet the team
+            </Link>
           </Button>
         </div>
       </section>
@@ -355,20 +384,26 @@ function MainLanding() {
 
       <div className="flex justify-start gap-2 ">
         <Button
+          asChild
           size={'lg'}
-          className="bg-blue-600 hover:bg-blue-700 shadow-lg "
+          className="bg-blue-600 hover:bg-blue-700 shadow-lg"
         >
-          Contact Us
+          <Link href={'/#bam'}>
+            Contact Us
+          </Link>
         </Button>
         <Button
+          asChild
           variant={'outline'}
           size={'lg'}
           className=" shadow-lg hover:bg-secondary"
         >
-          Learn More{' '}
-          <span>
-            <ArrowRight />
-          </span>
+          <Link href={"/#ms"}>
+            Learn More{' '}
+            <span>
+              <ArrowRight />
+            </span>
+          </Link>
         </Button>
       </div>
     </div>
