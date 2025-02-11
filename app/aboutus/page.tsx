@@ -95,7 +95,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
     {
         name: "Anish Aruru ",
-        role: "Co-Founder, Manager",
+        role: "Co-Founder, Lead Manager, Co-Chief Technology Director",
         image: anish,
         bio: "Hello, I am Anish Aruru, and I am a junior at the Maggie L. Walker Governor's School. I love learning new things and fueling my curiosity. My dream fields are coding and engineering. In my free time I love playing pickleball and the guitar. I hope to be able to make an impact on my community through Code4Cause and I am excited for the future!",
         github: "https://github.com",
@@ -103,53 +103,55 @@ const teamMembers: TeamMember[] = [
         twitter: "https://twitter.com/",
     },
     {
+        name: "Saket Sambaraju",
+        role: "Co Founder, Project Manager, Co-Chief Technology Director",
+        image: saket,
+        bio: "My name is Saket Sambaraju and I am a junior at Maggie L. Walker Governor's School. I am deeply interested in Computer Science and a variety of coding languages. In my free time, I love to play table tennis and learn new concepts. I am excited about the impact that we can bring in our community with Code4Cause! ",
+        github: "https://github.com/",
+        linkedin: "https://linkedin.com/in/",
+    },
+    {
         name: "Eshwar Bejugam",
-        role: "Co-Founder, Operations and Logistics",
+        role: "Co-Founder, Director of Operations and Logistics",
         image: eshwar,
         bio: "Hi, I am Eshwar Bejugam and I am a junior at J.R. Tucker High School in the International Baccalaureate program. I love math and computer science and I aspire to pursue data science in the future. In my free time, I enjoy playing chess and pickleball. I’m excited to use my love for technology to help the community!",
         github: "https://github.com/",
         linkedin: "https://linkedin.com/in/",
     },
     {
-        name: "Rishith Gandham",
-        role: "Co-Founder, Lead Developer",
-        image: rishith,
-        bio: "Hello, I am Rishith Gandham, and I am a junior at Deep Run High School. I am passionate about computer science and I love to code. I am excited to use my skills to help the community and make a difference. In my free time, I enjoy playing basketball and the piano.",
-        linkedin: "https://linkedin.com/in/",
-        twitter: "https://twitter.com/",
-    },
-    {
-        name: "Karan Nair",
-        role: "Co Founder, Developer",
-        image: karan,
-        bio: "My name is Karan Nair and I am a junior at Maggie L. Walker Governor's School. In my free time I like to workout, play soccer, and cad. In the future I want to pursue engineering with a minor in computer science. Im experienced in python, html, and css, and hope to help lead Code4Cause to a bright future!",
-        github: "https://github.com/",
-        linkedin: "https://linkedin.com/in/",
-    },
-    {
         name: "Sriram Darsi",
-        role: "Co Founder, External Communications",
+        role: "Co Founder, Director of External Communications",
         image: sriram,
         bio: "Hi! My name is Sriram Darsi and I am a junior at Henrico High School. In my free time, I love to listen to music, play basketball, and watch sports. I am looking forward to implementing various softwares in different socioeconomic areas in my community.",
         github: "https://github.com/",
         linkedin: "https://linkedin.com/in/",
     },
     {
-        name: "Saket Sambaraju",
-        role: "Co Founder, Project Management",
-        image: saket,
-        bio: "My name is Karan Nair and I am a junior at Maggie L. Walker Governor's School. In my free time I like to workout, play soccer, and cad. In the future I want to pursue engineering with a minor in computer science. Im experienced in python, html, and css, and hope to help lead Code4Cause to a bright future!",
-        github: "https://github.com/",
-        linkedin: "https://linkedin.com/in/",
-    },
-    {
         name: "Jitesh Chevuru",
-        role: "Co Founder, Marketing",
+        role: "Co Founder, Director of Marketing",
         image: jitesh,
         bio: "My name is Jithesh Chevuru and I am the current director of marketing. I am a junior at Henrico High School and I love to play tennis and volleyball. In my free time I like to talk to my friends and learn new things. I hope to spread Code4Cause’s mission across the nation.",
         github: "https://github.com/",
         linkedin: "https://linkedin.com/in/",
     },
+    {
+        name: "Karan Nair",
+        role: "Lead Designer, Coder",
+        image: karan,
+        bio: "My name is Karan Nair and I am a junior at Maggie L. Walker Governor's School. In my free time I like to workout, play soccer, and cad. In the future I want to pursue engineering with a minor in computer science. Im experienced in python, html, and css, and hope to help lead Code4Cause to a bright future!",
+        github: "https://github.com/",
+        linkedin: "https://linkedin.com/in/",
+    },
+    {
+        name: "Rishith Gandham",
+        role: "Intern, Code Developer",
+        image: rishith,
+        bio: "Hello, I am Rishith Gandham, and I am a junior at Deep Run High School. I am passionate about computer science and I love to code. I am excited to use my skills to help the community and make a difference. In my free time, I enjoy playing basketball and the piano.",
+        linkedin: "https://linkedin.com/in/",
+        twitter: "https://twitter.com/",
+    },
+    
+    
 
 
 
