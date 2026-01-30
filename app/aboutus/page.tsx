@@ -11,6 +11,7 @@ import jitesh from '@/app/images/jitesh.png'
 import karan from '@/app/images/karan.jpeg'
 import rishith from '@/app/images/rishith.jpg'
 import sriram from '@/app/images/sriram.png'
+import yiming from '@/app/images/yiming.jpeg'
 
 
 export const metadata: Metadata = {
@@ -114,7 +115,15 @@ const teamMembers: TeamMember[] = [
         name: "Eshwar Bejugam",
         role: "Co-Founder, Director of Operations and Logistics",
         image: eshwar,
-        bio: "Hi, I am Eshwar Bejugam and I am a junior at J.R. Tucker High School in the International Baccalaureate program. I love math and computer science and I aspire to pursue data science in the future. In my free time, I enjoy playing chess and pickleball. I’m excited to use my love for technology to help the community!",
+        bio: "Hi, I am Eshwar Bejugam and I am a junior at J.R. Tucker High School in the International Baccalaureate program. I love math and computer science and I aspire to pursue data science in the future. In my free time, I enjoy playing chess and pickleball. I'm excited to use my love for technology to help the community!",
+        github: "https://github.com/",
+        linkedin: "https://linkedin.com/in/",
+    },
+    {
+        name: "Yiming Peng",
+        role: "Texas Branch Founder",
+        image: yiming,
+        bio: "Hello, I am Yiming Peng, and I am a senior at Vandegrift High School in Austin, Texas. I love computer science and I'm hoping to expand Code4Cause into Texas. I play clarinet and do robotics in my free time.",
         github: "https://github.com/",
         linkedin: "https://linkedin.com/in/",
     },
