@@ -31,6 +31,14 @@ import tennisforall from './images/tennisforallinc.png'
 import tasx from './images/tasx.png'
 import evergreen from './images/evergreen.png'
 import rvaworks from './images/rvaworks.png'
+import margnorita from './images/MargNoRita.png'
+import farmbus from './images/FarmBus.png'
+import greencart from './images/GreenCart.png'
+import pollinators from './images/PollinatorsForChange.png'
+import healthmate from './images/HealthMate.png'
+import thegist from './images/TheGist.png'
+import legacylink from './images/LegacyLink.png'
+import powerplay from './images/PowerPlay.png'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -152,7 +160,6 @@ const examples = [
   {
     title: 'Tasx',
     image: tasx
-
   },
   {
     title: 'Evergreen',
@@ -161,6 +168,38 @@ const examples = [
   {
     title: 'RVA Works',
     image: rvaworks
+  },
+  {
+    title: 'Marg No Rita',
+    image: margnorita
+  },
+  {
+    title: 'FarmBus',
+    image: farmbus
+  },
+  {
+    title: 'GreenCart',
+    image: greencart
+  },
+  {
+    title: 'Pollinators For Change',
+    image: pollinators
+  },
+  {
+    title: 'HealthMate',
+    image: healthmate
+  },
+  {
+    title: 'The Gist',
+    image: thegist
+  },
+  {
+    title: 'LegacyLink',
+    image: legacylink
+  },
+  {
+    title: 'PowerPlay',
+    image: powerplay
   }
 ]
 
