@@ -153,7 +153,7 @@ const teamMembers: TeamMember[] = [
     },
     {
         name: "Rishith Gandham",
-        role: "Lead Code Developer",
+        role: "Co-Founder, Lead Code Developer",
         image: rishith,
         bio: "Hello, I am Rishith Gandham, and I am a junior at Deep Run High School. I am passionate about computer science and I love to code. I am excited to use my skills to help the community and make a difference. In my free time, I enjoy playing basketball and the piano.",
         linkedin: "https://linkedin.com/in/",
